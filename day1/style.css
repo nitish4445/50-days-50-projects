@@ -8,8 +8,10 @@ body{
     overflow: hidden;
 }
 .container{
+    width: 100%;
     display: flex;
-    width: 90vh;
+    justify-content: center;
+    align-items: center;
 }
 .panle{
     background-size: auto 100%;
@@ -40,11 +42,11 @@ body{
 .panle.active{
     flex: 5;
 }
-@media(max-width:480px){
+/* @media(max-width:480px){
     .container{
         width: 100vw;
     }
     .panle:nth-of-type(4),.panle:nth-of-type(5){
         display: none;
     }
-}
+} */
