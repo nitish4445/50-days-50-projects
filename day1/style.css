@@ -1,52 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 body{
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    font-family: "Roboto Slab", serif;
 }
 .container{
     width: 100%;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-.panle{
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
-    border-radius: 50px;
-    color: #ffff;
+.imageContainer{
+    width: 66px;
+    height: 100%;
+    margin: 30px;
+    background-color: red;
+    border-radius: 30px;
+    overflow: hidden;
     cursor: pointer;
-    flex: 0.5;
-    margin: 10px;
-    position: relative;
-    transition: flex 0.7s ease-in;
 }
-.panle h3 {
- font-size: 24px;
- position: absolute;
- bottom: 20px;
- left: 20px;
- margin: 0;
- opacity: 0;
+.afterClick{
+    width: 100%;
+    height: 100%;
 }
 
-.panle.active h3{
-    opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
+
+.firstImg,.secondImg,.thirdImg,.fourthImg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.panle.active{
-    flex: 5;
+
+.firstImg{
+    background-image: url(./image/Sunny\ Beach.jpg);   
 }
-/* @media(max-width:480px){
-    .container{
-        width: 100vw;
-    }
-    .panle:nth-of-type(4),.panle:nth-of-type(5){
-        display: none;
-    }
-} */
+.secondImg{
+    background-image: url(./image/Sunny\ Beach.jpg);
+}
+.thirdImg{
+    background-image: url(./image/Sunny\ Beach.jpg); 
+}
+.fourthImg{
+    background-image: url(./image/Sunny\ Beach.jpg);
+}
