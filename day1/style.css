@@ -23,10 +23,20 @@ body{
     border-radius: 30px;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+}
+.viewName{
+    display: none;
+    /* transition: all 2s ease-in-out; */
+    color: #cc1f08;
 }
 .afterClick{
     width: 100%;
     height: 100%;
+    transition: all 2s ease-in-out;
 }
 
 
@@ -34,6 +44,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
 }
 
 .firstImg{
