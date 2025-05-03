@@ -13,13 +13,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
     
 }
 .imageContainer{
     width: 66px;
     height: 100%;
     margin: 30px;
-    background-color: red;
+    background-color: #9e1717;
     border-radius: 30px;
     overflow: hidden;
     cursor: pointer;
