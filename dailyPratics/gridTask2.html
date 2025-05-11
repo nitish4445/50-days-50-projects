@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main-Container{
+            width: 100vh;
+            height: 100vh;
+            display: grid;
+            gap: 5px;
+            grid-template-areas: "side-g nav-g nav-g nav-r"
+                                "side-g arti-y arti-r arti-g"
+                                "side-g footer-r footer-y arti-g";
+        }
+
+        #box1{
+            background-color: #047804;
+            grid-area: side-g;
+        }
+        #box2{
+            background-color: #047804;
+            grid-area: nav-g;
+        }
+        #box3{
+            background-color: #047804;
+            grid-area: arti-g;
+        }
+        #box4{
+            background-color: #ffa807;
+            grid-area: arti-y;
+        }
+        #box5{
+            background-color: #ffa807;
+            grid-area: footer-y;
+        }
+        #box6{
+            background-color: #f32808;
+            grid-area: nav-r;
+        }
+        #box7{
+            background-color: #f32808;
+            grid-area: arti-r;
+        }
+        #box8{
+            background-color: #f32808;
+            grid-area: footer-r;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-Container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+        <div class="box" id="box7"></div>
+        <div class="box" id="box8"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #Contain{
+        display: none;
+        position: relative;
+        height: 100px;
+        width: 200px;
+        left: 30px;
+        top: 10px;
+        text-align: center;
+        box-shadow: 4px 10px 8px 0px #373535;
+    }
+    #main-Container:hover #Contain{
+        display: block;
+    }
+    a{
+        display: block;
+        color: #cc29a1;
+        margin: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    #btn{
+        border: none;
+        background-color: #5454f0;
+        color: aliceblue;
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    #btn:hover{
+        box-shadow: 4px 10px 12px 0px #a1a1e8;
+    }
+    </style>
+</head>
+<body>
+    <div id="main-Container">
+        <button id="btn">Dropdown</button>
+        <div id="Contain">
+            <a href="#">Option1</a>
+            <a href="#">Option2</a>
+            <a href="#">Option3</a>
+        </div>
+    </div>
+</body>
+</html>
