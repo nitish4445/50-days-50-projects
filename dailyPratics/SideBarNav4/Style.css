@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --base-clr:#11121a;
+    --line-clr:#42434a;
+    --hover-clr:#222533;
+    --text-clr:#e6e6ef;
+    --accent-clr:#5e63ff;
+    --secondary-text-clr:#b0b3c1;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Poppins, "Segoe UI",sans-serif;
+}
+body{
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--base-clr);
+    color: var(--text-clr);
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+#sidebar{
+    height: 100vh;
+    width: 250px;
+    border-right: 1px solid var(--line-clr);
+    position: sticky;
+    top: 0;
+    /* padding: min(30px,7%); */
+    align-self: start;
+    padding: 5px 1em;
+    color: var(--text-clr);
+    background-color: var(--base-clr);
+    text-wrap: nowrap;
+    overflow: hidden;
+    transition: 0.75s ease-in-out;
+}
+#sidebar ul{
+    list-style: none;
+}
+#sidebar a,#sidebar .dropdown-btn,#sidebar .logo{
+    color: var(--text-clr);
+    border-radius: .5em;
+    padding: .85em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+#sidebar svg{
+    flex-shrink: 0;
+    fill: var(--text-clr);
+}
+#sidebar a:hover,.dropdown-btn:hover{
+    background-color: var(--hover-clr);
+}
+#sidebar.close{
+    width: 58px;
+    padding: 5px;
+}
+.dropdown-btn{
+    border: none;
+    width: 100%;
+    background: none;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+#sidebar a span, #sidebar .dropdown-btn span{
+    flex-grow: 1;
+}
+.sub-menu{
+    padding-left: 1em;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.5s ease-in-out;
+    >div{
+        overflow: hidden;
+    }
+}
+.dropdown-btn svg{
+    transition: 0.38s ease-in-out;
+}
+.rotate svg:last-child{
+    rotate: 180deg;
+}
+.show{
+    grid-template-rows: 1fr;
+}
+#sidebar>ul>li:first-child{
+    /* padding: min(1em,7%); */
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+#Toggle-btn{
+    background: none;
+    border: none;
+    margin-left: auto;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 0.5em;
+    >svg{
+        transition: 0.38s ease-in-out;
+    }
+}
+#Toggle-btn:hover{
+    background-color: var(--hover-clr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    padding: min(30px,7%);
+}
+main p{
+    color: var(--secondary-text-clr);
+}
+.container{
+    border: 1px solid var(--line-clr);
+    border-radius: 1em;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: min(1em,15%);
+    h1,p{
+        margin-top: 1em;
+    }
+}
